@@ -15,7 +15,11 @@
 # pylint: disable=invalid-name
 
 """
+<<<<<<< HEAD
 Molmer-Sorensen gate
+=======
+Molmer-Sorensen gate.
+>>>>>>> f44d761239afd9973a40c456d9525c1ba47c2851
 """
 
 import numpy
@@ -28,6 +32,11 @@ from qiskit.extensions.standard.h import HGate
 from qiskit.extensions.standard.rx import RXGate
 from qiskit.extensions.standard.ry import RYGate
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f44d761239afd9973a40c456d9525c1ba47c2851
 class MSGate(Gate):
     """Molmer-Sorensen gate."""
 
@@ -60,8 +69,17 @@ class MSGate(Gate):
     #    # ToDo
     #    return numpy.array([[1]])
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f44d761239afd9973a40c456d9525c1ba47c2851
 def ms(self,theta,  q1, q2):
     """Apply MS to q1 and q2."""
     return self.append(MSGate(theta), [q1, q2], [])
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f44d761239afd9973a40c456d9525c1ba47c2851
 QuantumCircuit.ms = ms
