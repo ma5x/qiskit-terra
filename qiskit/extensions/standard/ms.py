@@ -15,11 +15,7 @@
 # pylint: disable=invalid-name
 
 """
-<<<<<<< HEAD
 Molmer-Sorensen gate
-=======
-Molmer-Sorensen gate.
->>>>>>> f44d761239afd9973a40c456d9525c1ba47c2851
 """
 
 import numpy
@@ -57,15 +53,9 @@ class MSGate(Gate):
 
     def inverse(self):
         """Invert this gate."""
-        return MSGate()  # self-inverse
+        return MSGate(-self.params[0])
 
-    #def to_matrix(self):
-    #    """Return a Numpy.array for the MS gate."""
-    #    # ToDo
-    #    return numpy.array([[1]])
-
-
-def ms(self,theta,  q1, q2):
+def ms(self, theta,  q1, q2):
     """Apply MS to q1 and q2."""
     return self.append(MSGate(theta), [q1, q2], [])
 
